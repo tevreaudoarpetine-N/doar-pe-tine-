@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+}
+
+.pane {
+    width: 50%;
+    padding: 10px;
+}
+
+.title-bar {
+    background-color: #007acc;
+    color: white;
+    padding: 5px;
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
